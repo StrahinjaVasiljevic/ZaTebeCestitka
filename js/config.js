@@ -23,7 +23,7 @@ window.CESTITKA = {
   nudges: [
     "Hmm, sigurna si?",
     "Razmisli malo bolje 👀",
-    "Ljigavac je tužan sad 🥺",
+    "Pogledaj! Mali ljigavac je tužan 🥺",
     "Dobro dobro, shvatam poentu 😏"
   ],
   nudgeKadaNijeSpremno: "Prvo probaj dugme NE 😏",
@@ -43,21 +43,21 @@ window.CESTITKA = {
 
   // ---------- EKRAN 5: FINALNA PORUKA ----------
   finalNaslov: "Vidimo se! 💛",
-  finalPoruka: "Doći ću po tebe benzom 🚗",
+  finalPoruka: "Doći ću po tebe BENVEOM 🚗",
   finalMapsLinkTekst: "Kafana Upitnik na mapi ↗",
   dugmeDaljeNaHappy: "Još samo jedno pitanje →",
 
   // ---------- EKRAN 6: FINALNI KVIZ SREĆE ----------
   happyPitanje: "Da li si srećna ovim malim znakom pažnje?",
   dugmeNe2: "Ne!",
-  dugmeDaLjubav: "Stvarno, ti me činiš najsrećnijom devojkom u univerzumu univerzuma!!!❤️",
+  dugmeDaLjubav: "Stvarnoo srećo, ti me činiš najsrećnijom devojkom u univerzumu univerzuma!!!❤️",
   // rečenice koje se smenjuju na dugmetu "Ne!"
   sadLines: [
     "Ne? Ma hajde... 😏",
     "Pokušaj ponovo 😅",
-    "To dugme ne radi baš 😌"
+    "To dugme baš ne radi, a 😌"
   ],
-  finalGrandNaslov: "Srećna godišnjica, volim te.",
+  finalGrandNaslov: "Srećna godišnjica ljubavi, volim te.",
 
   // ---------- MUZIKA ----------
   audioFajl: "audio/conga.mp3",
@@ -65,5 +65,5 @@ window.CESTITKA = {
 
   // ---------- PONAŠANJE (opciono podešavanje) ----------
   gateClicks: 3,      // koliko puta mora da klikne NE pre nego DA postane aktivno
-  explodeAt: 5         // koliko klikova na "srećno" dugme pre nego konfete eksplodiraju
+  explodeAt: 5         // koliko klikova na "srećno" dugme pre nego što konfete eksplodiraju
 };
