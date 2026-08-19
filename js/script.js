@@ -98,12 +98,6 @@
   document.addEventListener('click', function(){
     if(song.paused){ startMusic(); }
   });
-  
-
-  document.getElementById('screen-start').addEventListener('click', function(){
-    startMusic();
-    show('screen-quiz');
-  });
 
   // ako se muzika neočekivano pauzira, nastavi na sledeći tap
   document.addEventListener('click', function(){
