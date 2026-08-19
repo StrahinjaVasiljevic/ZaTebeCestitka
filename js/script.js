@@ -78,12 +78,26 @@
   song.loop = true;
   song.volume = (typeof C.audioVolume === 'number') ? C.audioVolume : 0.9;
 
-  var musicStarted = false;
+ song.addEventListener('error', function(){
+    console.error('AUDIO GREŠKA — fajl se ne može učitati/dekodirati:', song.error);
+  });
+
   function startMusic(){
-    if(musicStarted) return;
-    musicStarted = true;
     var p = song.play();
-    if(p && p.catch){ p.catch(function(){ musicStarted = false; }); }
+    if(p && p.catch){
+      p.catch(function(err){ console.warn('Audio play blokiran, pokušaću ponovo na sledeći tap:', err); });
+    }
+  }
+
+  document.getElementById('screen-start').addEventListener('click', function(){
+    startMusic();
+    show('screen-quiz');
+  });
+
+  // na SVAKI tap na stranici, ako muzika nije krenula ili je pauzirana, pokušaj ponovo
+  document.addEventListener('click', function(){
+    if(song.paused){ startMusic(); }
+  });
   }
 
   document.getElementById('screen-start').addEventListener('click', function(){
