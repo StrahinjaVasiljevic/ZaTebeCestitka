@@ -73,14 +73,17 @@
 
   // ---------- 4) Muzika ----------
   var song = document.getElementById('song');
+
+if(song){
   song.src = C.audioFajl || 'audio/conga.mp3';
   song.load();
   song.loop = true;
   song.volume = (typeof C.audioVolume === 'number') ? C.audioVolume : 0.9;
 
- song.addEventListener('error', function(){
+  song.addEventListener('error', function(){
     console.error('AUDIO GREŠKA — fajl se ne može učitati/dekodirati:', song.error);
   });
+}
 
    var musicStarted = false;
    
