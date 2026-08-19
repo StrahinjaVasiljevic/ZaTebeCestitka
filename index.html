@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Čestitka 💛</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="stage">
+  <div id="spotlight"></div>
+  <div id="floor"></div>
+  <div id="confetti-layer"></div>
+
+  <!-- START: dancing jelly blob, tap anywhere -->
+  <div class="screen active" id="screen-start">
+    <div class="blob-wrap">
+      <div class="limb arm l"></div>
+      <div class="limb arm r"></div>
+      <div class="limb leg l"></div>
+      <div class="limb leg r"></div>
+      <div class="party-hat"></div>
+      <div class="blob">
+        <div class="brow l"></div>
+        <div class="brow r"></div>
+        <div class="eye l"><div class="pupil"></div></div>
+        <div class="eye r"><div class="pupil"></div></div>
+        <div class="cheek l"></div>
+        <div class="cheek r"></div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+    <div class="blob-shadow"></div>
+    <h1></h1>
+    <div class="tap-hint"></div>
+  </div>
+
+  <!-- QUIZ 1: date question -->
+  <div class="screen" id="screen-quiz">
+    <div class="eyebrow"></div>
+    <div class="blob-wrap">
+      <div class="limb arm l"></div>
+      <div class="limb arm r"></div>
+      <div class="limb leg l"></div>
+      <div class="limb leg r"></div>
+      <div class="party-hat"></div>
+      <div class="blob">
+        <div class="brow l"></div>
+        <div class="brow r"></div>
+        <div class="eye l"><div class="pupil"></div></div>
+        <div class="eye r"><div class="pupil"></div></div>
+        <div class="cheek l"></div>
+        <div class="cheek r"></div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+    <div class="blob-shadow"></div>
+    <div id="quiz-q"></div>
+    <div id="btn-row">
+      <button id="btn-yes"></button>
+      <button id="btn-no"></button>
+    </div>
+    <div id="nudge"></div>
+  </div>
+
+  <!-- LOCATION -->
+  <div class="screen" id="screen-loc">
+    <div class="eyebrow"></div>
+    <h2></h2>
+    <button class="card" id="btn-loc" style="cursor:pointer; text-align:left; width:100%;">
+      <div class="tiny">📍 Mesto</div>
+      <div class="big"></div>
+    </button>
+    <a class="link-out" id="link-maps" href="#" target="_blank" rel="noopener"></a>
+    <div class="progress-dots"><span class="on"></span><span></span><span></span></div>
+  </div>
+
+  <!-- TIME -->
+  <div class="screen" id="screen-time">
+    <div class="eyebrow"></div>
+    <h2></h2>
+    <button class="card" id="btn-time" style="cursor:pointer; text-align:left; width:100%;">
+      <div class="tiny">🕖 Kad</div>
+      <div class="big"></div>
+    </button>
+    <div class="progress-dots"><span class="on"></span><span class="on"></span><span></span></div>
+  </div>
+
+  <!-- FINAL MESSAGE -->
+  <div class="screen" id="screen-final">
+    <h1></h1>
+    <p class="sub"></p>
+    <span class="car">🚗💨</span>
+    <a class="link-out" id="link-maps-2" href="#" target="_blank" rel="noopener"></a>
+    <button class="btn-primary" id="btn-to-happy"></button>
+  </div>
+
+  <!-- FINAL HAPPINESS QUIZ -->
+  <div class="screen" id="screen-happy">
+    <div class="eyebrow">Poslednje pitanje</div>
+    <h2 id="happy-q"></h2>
+    <div id="happy-row">
+      <button id="btn-sad"></button>
+      <button id="btn-happy"></button>
+    </div>
+    <div class="happy-final">
+      <div class="big-heart">❤️</div>
+      <h1></h1>
+    </div>
+  </div>
+</div>
+
+<audio id="song" preload="auto" loop></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.browser.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
 
