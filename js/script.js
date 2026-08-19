@@ -76,6 +76,7 @@
 
 if(song){
   song.src = C.audioFajl || 'audio/conga.mp3';
+   console.log("Audio path:", song.src);
   song.load();
   song.loop = true;
   song.volume = (typeof C.audioVolume === 'number') ? C.audioVolume : 0.9;
