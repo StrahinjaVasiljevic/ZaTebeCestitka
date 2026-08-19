@@ -82,6 +82,8 @@
     console.error('AUDIO GREŠKA — fajl se ne može učitati/dekodirati:', song.error);
   });
 
+   var musicStarted = false;
+   
   function startMusic(){
     var p = song.play();
     if(p && p.catch){
