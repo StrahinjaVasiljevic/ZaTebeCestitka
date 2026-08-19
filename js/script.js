@@ -98,7 +98,7 @@
   document.addEventListener('click', function(){
     if(song.paused){ startMusic(); }
   });
-  }
+  
 
   document.getElementById('screen-start').addEventListener('click', function(){
     startMusic();
